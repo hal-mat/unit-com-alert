@@ -1,0 +1,12 @@
+{
+  "name": "unitcom-alert",
+  "manifest_version": 3,
+  "version": "0.1",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "js": ["unitcom-alert.js"],
+      "matches": ["https://www.pc-koubou.jp/shopping/?transactionid=*"]
+    }
+  ]
+}
